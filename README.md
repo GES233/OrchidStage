@@ -1,21 +1,21 @@
-# OrchidStage
+# [WIP]OrchidStage
 
 **TODO: Add description**
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `orchid_stage` to your list of dependencies in `mix.exs`:
-
 ```elixir
 def deps do
   [
-    {:orchid_stage, "~> 0.1.0"}
+    {:orchid_stage, git: "https://github.com/GES233/OrchidStage.git"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/orchid_stage>.
+## Usage
 
+Just simply:
+
+```elixir
+res = Orchid.run(recipe, inputs, executor_and_opts: {OrchidStage, [worker_num: 4]})
+```
